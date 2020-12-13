@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.ini-navbar{
+  border-radius:0 0 30px 30px;
+}
+.navlink {
+  width: 500px;
+  justify-content: space-around;
+}
+.navlink > a {
+  position: relative;
+  font-weight: 400;
+  letter-spacing: 1px;
+  transform-origin: bottom right;
+  transition: color 0.3s, /* border 20s ease-out  */;
+}
+.navlink > a:hover {
+  color: #ffffff  !important;
+  text-decoration: none;
+  /* border-bottom: 2px solid white; */
+  display: inline-block;
+}
+.navlink a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+}
+.navlink > a:hover::before {
+  transform: scaleX(1);
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/dark-1.jpg);
+  background-size: cover;
+  padding-top: 15%;
+  overflow: hidden;
+}
+
+.banner .container p {
+  font-size: 32px;
+  color: #fff;
+  letter-spacing: 3px;
+}
+.banner .container h1 {
+  font-size: 94px;
+  font-family: "Rubik", sans-serif;
+  letter-spacing: 10px;
+  color: #45FF00;
+}
+.tombol {
+  margin-top: 50px;
+}
+.banner .container a button {
+  background: transparent ;
+  color: #37ca01;
+  letter-spacing: 1px;
+  font-size: 23px;
+  outline: none;
+  border: 3px solid #37ca01;
+  width: 237px;
+  height: 55px;
+  border-radius: 15px;
+  margin-right: 12px;
+  transition:  0.5s ease-out;
+}
+
+.banner .container a button:hover {
+  border: none;
+  background: #37ca01;
+  color: #000;
+}
+.about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* .about .container {
+  padding-top: 90px;
+} */
+.about-judul, .bibit-judul {
+  display: flex;
+  justify-content: center;
+}
+.about-judul h1, .bibit-judul h1 {
+  display: inline-block;
+  text-align: center;
+  border-bottom: 4px solid #8a8a8a;
+  margin-bottom: 100px;
+}
+.about-content p {
+  font-size: 18px;
+  color: #4e4e4e;
+}
+@media (max-width: 1200px) {
+  .navbar-brand {
+    font-size: 26px !important;
+  }
+  .navbar-brandnya {
+    font-size: 28px !important;
+  }
+  .navlink {
+    width: 450px;
+  }
+  .banner {
+    background-position-x: -120px;
+    padding-top: 28%;
+  }
+  .banner .container h1 {
+    font-size: 84px;
+    letter-spacing: 7px;
+  }
+  .banner .container p {
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+  .tombol {
+    margin-top: 38px;
+  }
+  .banner .container a button {
+    font-size: 20px;
+    width: 210px;
+    height: 48px;
+  }
+}
+@media (max-width: 992px) {
+  .navbar-brand {
+    font-size: 24px !important;
+  }
+  .navbar-brandnya {
+    font-size: 26px !important;
+  }
+  .navlink {
+    width: 400px !important;
+  }
+  .banner {
+    background-position-x: -220px;
+    padding-top: 38% !important;
+  }
+  .banner .container h1 {
+    font-size: 70px !important;
+    letter-spacing: 5px;
+  }
+  .banner .container p {
+    font-size: 30px !important;
+    letter-spacing: 2px;
+  }
+  .tombol {
+    margin-top: 35px;
+    display: inline !important;
+  }
+  .banner .container a button {
+    margin-right: 10px !important;
+    font-size: 20px;
+    width: 200px;
+    height: 47px;
+  }
+}
+@media (max-width: 768px) {
+  .ini-navbar{
+    border-radius:0 0 20px 20px;
+  }
+  .navbar-brand {
+    font-size: 18px !important;
+  }
+  .navbar-brandnya {
+    font-size: 20px !important;
+  }
+  .navlink {
+    width: 90% !important;
+  }
+  .navlink a::before {
+    display: none;
+  }
+  .banner {
+    background-position-x: -320px;
+    padding-top: 200px;
+  }
+  .banner .container h1 {
+    font-size: 46px !important;
+    letter-spacing: 5px;
+  }
+  .banner .container p {
+    font-size: 16px !important;
+    letter-spacing: 2px;
+  }
+  .tombol {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .banner .container a button {
+    border-radius: 10px;
+    margin-right: 0;
+    font-size: 17px;
+    margin-top: 15px;
+    width: 160px;
+    height: 38px;
+  }
+}
