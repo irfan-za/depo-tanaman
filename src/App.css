@@ -2,10 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Nunito", sans-serif;
 }
-.ini-navbar{
-  border-radius:0 0 30px 30px;
+.ini-navbar {
+  border-radius: 0 0 30px 30px;
 }
 .navlink {
   width: 500px;
@@ -19,7 +19,7 @@
   transition: color 0.3s, /* border 20s ease-out  */;
 }
 .navlink > a:hover {
-  color: #ffffff  !important;
+  color: #ffffff !important;
   text-decoration: none;
   /* border-bottom: 2px solid white; */
   display: inline-block;
@@ -34,7 +34,7 @@
   left: 0;
   background-color: #fff;
   transform-origin: bottom left;
-  transition: transform 0.25s ease-out;
+  transition: 0.25s ease-out;
 }
 .navlink > a:hover::before {
   transform: scaleX(1);
@@ -58,54 +58,207 @@
   font-size: 94px;
   font-family: "Rubik", sans-serif;
   letter-spacing: 10px;
-  color: #45FF00;
+  color: #37cc00;
 }
 .tombol {
   margin-top: 50px;
 }
 .banner .container a button {
-  background: transparent ;
-  color: #37ca01;
+  background: transparent;
+  color: #2daa00;
   letter-spacing: 1px;
   font-size: 23px;
+  font-weight: 600;
+  border: none;
   outline: none;
-  border: 3px solid #37ca01;
+  border: 3px solid #2daa00;
+  outline: none;
   width: 237px;
   height: 55px;
   border-radius: 15px;
   margin-right: 12px;
-  transition:  0.5s ease-out;
+  transition: 0.4s cubic-bezier(0.79, 0.33, 0.14, 0.53);
 }
 
 .banner .container a button:hover {
-  border: none;
-  background: #37ca01;
-  color: #000;
+  background: #2daa00;
+  color: #fff;
 }
-.about {
+.about,
+.bibit {
+  padding-top: 100px;
+}
+.about,
+.bibit,
+.kontak {
+  /* border: 2px solid red; */
   width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
+  /* padding-top: 10px; */
+  /* height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
 }
 /* .about .container {
-  padding-top: 90px;
-} */
-.about-judul, .bibit-judul {
+    
+  } */
+.about-judul,
+.bibit-judul,
+.kontak-judul {
   display: flex;
   justify-content: center;
 }
-.about-judul h1, .bibit-judul h1 {
+.about-judul h1,
+.bibit-judul h1,
+.kontak-judul h1 {
+  color: rgb(48, 48, 48);
   display: inline-block;
   text-align: center;
   border-bottom: 4px solid #8a8a8a;
   margin-bottom: 100px;
 }
 .about-content p {
+  line-height: 36px;
   font-size: 18px;
   color: #4e4e4e;
+}
+.bibit-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.bibitCards {
+  border: 1px solid red;
+  display: grid;
+  grid-template-rows: repeat(100px);
+  grid-auto-columns: 300px;
+  /* grid-auto-columns: 100px; */
+  /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; */
+}
+
+.bibit-footer {
+  display: flex;
+  justify-content: center;
+}
+.lebihBanyak {
+  margin-top: 25px;
+  border: none;
+  outline: none !important;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 6px 25px 6px 25px;
+  background-color: #37ca01;
+  box-shadow: 0 7px 0 #248600;
+  margin-bottom: 30px;
+}
+.lebihBanyak:active {
+  transform: translateY(7px);
+  box-shadow: none;
+}
+.kontak {
+  margin-top: 100px;
+  overflow: hidden;
+  background-color: #156b39;
+}
+.kontak-content {
+  letter-spacing: 1px;
+  color: #fff;
+  /* border: 2px solid purple;s */
+}
+
+.kontak-judul h1 {
+  color: #fff;
+  border-bottom: 4px solid #dadada;
+}
+.kontak-luar {
+  /* height: 635px; */
+  background: #156b39;
+  padding-top: 50px;
+}
+.alamat,
+.waa,
+.emaill {
+  display: flex;
+  margin-bottom: 6px;
+}
+.waAdmin {
+  margin: 10px 0 30px 0;
+  font-size: 20px;
+  border-radius: 7px;
+  width: 230px;
+  height: 40px;
+  box-sizing: border-box;
+  color: #fff;
+  /* padding: 5px 40px 5px 40px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 3px 7px #b6b6b680;
+  background: linear-gradient(
+    90.9deg,
+    rgb(0, 153, 56) 0.5%,
+    rgba(0, 214, 32, 1) 99.7%
+  );
+}
+.waAdmin:hover {
+  filter: brightness(0.9);
+}
+
+.waAdmin h6 {
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-size: 17px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo * {
+  margin-right: 5px;
+}
+.instagram {
+  margin-right: 10px;
+}
+.instagram a {
+  display: flex;
+  /* letter-spacing: 0; */
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+.instagram a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+.instagram a h5 {
+  font-family: "Kaushan Script", cursive;
+}
+.tombolKirim {
+  margin-top: 25px;
+  font-weight: 600;
+  border: none;
+  outline: none !important;
+  border-radius: 8px;
+  padding: 6px 25px 6px 25px;
+  color: #156b39;
+  margin-bottom: 80px;
+  letter-spacing: 1px;
+  background-color: #98f000;
+  transition: 0.4s cubic-bezier(0.79, 0.33, 0.14, 0.53);
+}
+/* .tombolKirim:hover {
+  box-shadow: 0px 6px 17px #b6b6b680;
+  transform: translateY(-1px);
+} */
+.footernya {
+  line-height: 50px;
+  color: #dadada;
 }
 @media (max-width: 1200px) {
   .navbar-brand {
@@ -138,6 +291,13 @@
     height: 48px;
   }
 }
+.namaProduk {
+  font-size: 12px;
+}
+.hargaProduk {
+  font-size: 14px;
+}
+
 @media (max-width: 992px) {
   .navbar-brand {
     font-size: 24px !important;
@@ -170,10 +330,13 @@
     width: 200px;
     height: 47px;
   }
+  .lebihBanyak {
+    padding: 5px 20px 5px 20px;
+  }
 }
 @media (max-width: 768px) {
-  .ini-navbar{
-    border-radius:0 0 20px 20px;
+  .ini-navbar {
+    border-radius: 0 0 20px 20px;
   }
   .navbar-brand {
     font-size: 18px !important;
@@ -211,5 +374,9 @@
     margin-top: 15px;
     width: 160px;
     height: 38px;
+  }
+  .lebihBanyak {
+    font-size: 14px;
+    padding: 5px 20px 5px 20px;
   }
 }
