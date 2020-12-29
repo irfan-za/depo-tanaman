@@ -3,7 +3,7 @@ import "./../App.css"
 import { Nav, Navbar } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faLeaf,faHome,} from "@fortawesome/free-solid-svg-icons"
+import { faLeaf,} from "@fortawesome/free-solid-svg-icons"
 
 function Navs() {
 
@@ -33,12 +33,12 @@ const [navBackground, setNavBackground] = useState(false)
     }} fixed='top'  expand="md">
           <div className="container" >
         <Navbar.Brand className='navbar-brand' style=
-        {{color:'#45FF00',
+        {{color:'#37cc00',
         fontSize:"30px"
 }}  href="#home"><span className='navbar-brandnya' style=
         {{
         fontSize:'32px',
-        fontFamily: `'Rubik', sans-serif`,
+        fontFamily: `'Poppins', sans-serif`,
         letterSpacing:'2px',
   fontWeight:"bold"}} >DEPO TANAMAN</span><FontAwesomeIcon style={{transform: `translateY(-3px)`}} icon={faLeaf} /></Navbar.Brand>
         <Navbar.Toggle style={{
@@ -47,9 +47,8 @@ const [navBackground, setNavBackground] = useState(false)
       filter: "drop-shadow(0 0 6px white)"}} aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" >
           <Nav className="ml-auto navlink" >
-            <a style={{color: navBackground? '#AEFEB3' : "#fff",
-            
-         }} href=""><span><FontAwesomeIcon icon={faHome}/></span> HOME</a>
+           <a href="#home" style={{color: navBackground? '#AEFEB3' : "#fff",
+         }} >HOME</a> 
             <a style={{color: navBackground? '#AEFEB3' : "#fff",
             
          }} href="#about">ABOUT</a>
@@ -58,7 +57,7 @@ const [navBackground, setNavBackground] = useState(false)
          }} href="#bibit">BIBIT</a>
             <a style={{color: navBackground? '#AEFEB3' : "#fff",
             
-         }} href="#kontak">KONTAK KAMI</a>
+         }} href="#kontak">KONTAK</a>
           </Nav>
         </Navbar.Collapse>
         </div>
