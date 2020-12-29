@@ -3,15 +3,19 @@ import "./../App.css";
 
 function Banner() {
   return (
-    <div className="banner">
-        <div className="container">
-            <p>Selamat datang di website</p>
-            <h1>DEPO TANAMAN</h1>
-            <div className="tombol">
-            <a href="#about"><button >Selengkapnya</button></a> 
-            <a href="#kontakKami"><button >Kontak Kami</button></a>
-            </div>
+    <div className="banner" id="home">
+      <div className="container">
+        <p>Selamat datang di website</p>
+        <h1>DEPO TANAMAN</h1>
+        <div className="tombol">
+          <a href="#about">
+            <button>Selengkapnya</button>
+          </a>
+          <a href="#kontak">
+            <button>Kontak Kami</button>
+          </a>
         </div>
+      </div>
     </div>
   );
 }
