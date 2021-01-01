@@ -1,2 +1,2 @@
 # depo-tanaman
-landing page of Depo Tanaman 
+Company profile of Depo Tanaman 
