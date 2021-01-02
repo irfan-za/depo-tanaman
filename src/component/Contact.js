@@ -70,7 +70,7 @@ function Contact() {
                   <div className="logo">
                     <div className="instagram">
                       <a
-                        href="http://instagram.com/depo_tanaman"
+                        href="https://instagram.com/depo_tanaman"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -109,7 +109,7 @@ function Contact() {
                     </div>
                     <div className="tokopedia">
                       <a
-                        href="http://tokopedia.com/depotanaman"
+                        href="href="https://tokopedia.link/ZKKKmvSEIcb"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -206,7 +206,7 @@ function Contact() {
                     </div>
                     <div className="shopee">
                       <a
-                        href="http://shopee.com/depo_tanaman"
+                        href="https://shopee.com/depo_tanaman"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
