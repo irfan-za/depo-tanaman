@@ -117,7 +117,9 @@ function Bibit() {
         </div>
         <div className="bibit-footer">
           <ScrollAnimation animateIn="slideInUp" animateOut="slideOutDown">
-            <button className="lebihBanyak">Lihat lebih banyak...</button>
+            <a href="https://tokopedia.link/ZKKKmvSEIcb">
+              <button className="lebihBanyak">Lihat lebih banyak...</button>
+            </a>
           </ScrollAnimation>
         </div>
       </Container>
