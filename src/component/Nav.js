@@ -4,9 +4,7 @@ import { Nav, Navbar } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLeaf } from "@fortawesome/free-solid-svg-icons";
-// import animasi
-import ScrollAnimation from "react-animate-on-scroll";
-import "animate.css/source/animate.css";
+
 // import animasi utk pemanggilan lewat classname
 import "animate.css/animate.min.css";
 
